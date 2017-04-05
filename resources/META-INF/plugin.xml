@@ -15,6 +15,9 @@
   <extensions defaultExtensionNs="com.intellij"/>
 
   <actions>
+    <action id="MarkSymlinksAsExcluded" class="MarkSymlinksAsExcludedAction" text="Mark all symlinks as Excluded">
+      <add-to-group group-id="ProjectViewPopupMenuSettingsGroup" anchor="after" relative-to-action="MarkRootGroup"/>
+    </action>
   </actions>
 
 </idea-plugin>

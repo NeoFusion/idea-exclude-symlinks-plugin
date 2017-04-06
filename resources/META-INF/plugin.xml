@@ -1,4 +1,4 @@
-<idea-plugin>
+<idea-plugin url="https://github.com/NeoFusion/idea-exclude-symlinks-plugin">
   <id>ru.neofusion.ExcludeSymlinks</id>
   <name>Exclude Symlinks</name>
   <version>0.1</version>

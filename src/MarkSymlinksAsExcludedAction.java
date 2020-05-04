@@ -15,7 +15,7 @@ public class MarkSymlinksAsExcludedAction extends MarkRootActionBase {
 
     @Override
     protected void modifyRoots(@NotNull VirtualFile vFile, @NotNull ContentEntry entry) {
-        VfsUtilCore.visitChildrenRecursively(vFile, new VirtualFileVisitor() {
+        VfsUtilCore.visitChildrenRecursively(vFile, new VirtualFileVisitor<Object>() {
             @Override
             public boolean visitFile(@NotNull VirtualFile file) {
                 if (file.isDirectory() && file.is(VFileProperty.SYMLINK)) {

@@ -1,21 +1,23 @@
 <idea-plugin url="https://github.com/NeoFusion/idea-exclude-symlinks-plugin">
   <id>ru.neofusion.ExcludeSymlinks</id>
   <name>Exclude Symlinks</name>
-  <version>0.1</version>
+  <version>0.2</version>
   <vendor email="evgeniy@neofusion.ru" url="http://neofusion.ru">Evgeniy NeoFusion</vendor>
 
   <description><![CDATA[
-      Exclude symlinks in subdirectories.
+      <p>Walks subdirectories recursively, marks symlinks as excluded.</p>
+      <br>
+      <p><b>Usage:</b> right-click on a directory in the Project tool window and select "Mark All Symlinks as Excluded" from the context menu.</p>
     ]]></description>
 
-  <idea-version since-build="145.0"/>
+  <idea-version since-build="173.0"/>
 
-  <depends>com.intellij.modules.lang</depends>
+  <depends>com.intellij.modules.platform</depends>
 
   <extensions defaultExtensionNs="com.intellij"/>
 
   <actions>
-    <action id="MarkSymlinksAsExcluded" class="MarkSymlinksAsExcludedAction" text="Mark all symlinks as Excluded">
+    <action id="MarkSymlinksAsExcluded" class="MarkSymlinksAsExcludedAction" text="Mark All Symlinks as Excluded">
       <add-to-group group-id="ProjectViewPopupMenuSettingsGroup" anchor="after" relative-to-action="MarkRootGroup"/>
     </action>
   </actions>
